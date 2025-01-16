@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture Store Product Reveal</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Product Sections -->
+  <section>
+    <img src="img/armchair-no-bg.png" alt="Chair 1" class="product-image">
+    <div class="product-details">
+      <h2 class="product-title">Elegant Armchair</h2>
+      <p class="product-description">Relax in style with this elegant armchair, crafted for ultimate comfort and sophistication.</p>
+
+    </div>
+  </section>
+  <section>
+    <img src="img/green-sofa.jpg" alt="Sofa 1" class="product-image">
+    <div class="product-details">
+      <h2 class="product-title">Luxurious Sofa</h2>
+      <p class="product-description">This luxurious sofa blends modern design with timeless comfort for your living space.</p>
+    </div>
+  </section>
+  <section>
+    <img src="img/coffee-table.jpg" alt="Table 1" class="product-image">
+    <div class="product-details">
+      <h2 class="product-title">Minimalist Coffee Table</h2>
+      <p class="product-description">Enhance your living room with this sleek and minimalist coffee table.</p>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    // GSAP ScrollTrigger animation
+    gsap.registerPlugin(ScrollTrigger);
+
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach(section => {
+      gsap.fromTo(section, {
+        opacity: 0,
+        y: 50
+      }, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          end: "bottom 60%",
+          toggleActions: "play none none none"
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
