@@ -11,11 +11,11 @@
 
   <!-- Product Sections -->
   <section>
-    <img src="img/armchair-no-bg.png" alt="Chair 1" class="product-image">
+    <img src="img/armchairs.jpg" alt="Chair 1" class="product-image">
     <div class="product-details">
       <h2 class="product-title">Elegant Armchair</h2>
       <p class="product-description">Relax in style with this elegant armchair, crafted for ultimate comfort and sophistication.</p>
-
+      <a href="#" class="buy-now-btn">Buy Now</a>
     </div>
   </section>
   <section>
@@ -23,6 +23,7 @@
     <div class="product-details">
       <h2 class="product-title">Luxurious Sofa</h2>
       <p class="product-description">This luxurious sofa blends modern design with timeless comfort for your living space.</p>
+      <a href="#" class="buy-now-btn">Buy Now</a>
     </div>
   </section>
   <section>
@@ -30,34 +31,35 @@
     <div class="product-details">
       <h2 class="product-title">Minimalist Coffee Table</h2>
       <p class="product-description">Enhance your living room with this sleek and minimalist coffee table.</p>
-    </div>
+      <a href="#" class="buy-now-btn">Buy Now</a>
+    </div>   
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script>
-    // GSAP ScrollTrigger animation
-    gsap.registerPlugin(ScrollTrigger);
+     // GSAP ScrollTrigger animation
+     gsap.registerPlugin(ScrollTrigger);
 
-    const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section");
 
-    sections.forEach(section => {
-      gsap.fromTo(section, {
-        opacity: 0,
-        y: 50
-      }, {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: section,
-          start: "top 80%",
-          end: "bottom 60%",
-          toggleActions: "play none none none"
-        }
-      });
-    });
+sections.forEach(section => {
+  gsap.fromTo(section, {
+    opacity: 0,
+    y: 50
+  }, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: section,
+      start: "top 80%",
+      end: "bottom 60%",
+      toggleActions: "play reverse play reverse"
+    }
+  });
+});
   </script>
 
 </body>
