@@ -55,7 +55,7 @@ This repository features 20 innovative project ideas that leverage the GreenSock
 ## How to Use
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/gsap-in-ecommerce.git
+   git clone https://github.com/V-FOR-VEND3TTA/gsap-in-ecommerce.git
    ```
 2. Navigate to the project folder:  
    ```bash
