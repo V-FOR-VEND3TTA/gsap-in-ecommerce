@@ -71,3 +71,34 @@ body {
   .carousel-controls button:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-image {
+      width: 80%;
+    }
+    .product-title {
+      font-size: 1.5rem;
+    }
+    .product-description {
+      font-size: 0.9rem;
+    }
+    .buy-now-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-title {
+      font-size: 1.2rem;
+    }
+    .product-description {
+      font-size: 0.8rem;
+    }
+    .buy-now-btn {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+  
