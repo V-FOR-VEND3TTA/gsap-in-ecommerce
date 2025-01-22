@@ -36,3 +36,19 @@ body {
     transition: transform 0.3s ease;
     transform-origin: center;
 }  
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .product-image-wrapper {
+      width: 200px;
+      height: 200px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .product-image-wrapper {
+      width: 150px;
+      height: 150px;
+    }
+}
+  
