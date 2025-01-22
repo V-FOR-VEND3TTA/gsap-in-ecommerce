@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #d3d9df;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@ body {
 .viewer-container {
     position: relative;
     width: 80%;
-    max-width: 600px;
+    max-width: 800px;
     aspect-ratio: 1; /* Ensures a square container */
     overflow: hidden;
 }
@@ -32,5 +32,6 @@ body {
     object-fit: contain;
     position: absolute;
     display: none; /* Initially hide all frames */
+    border-radius: 5px;
 }
   
