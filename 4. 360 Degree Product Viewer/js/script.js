@@ -1,5 +1,5 @@
 // Configuration
-const totalFrames = 36; // Total number of images
+const totalFrames = 6; // Total number of images
 const imagePath = "img/frame-"; // Base path for the images
 const imageExtension = ".png"; // Extension for the images
 
@@ -7,7 +7,7 @@ const imageExtension = ".png"; // Extension for the images
 const viewer = document.querySelector(".product-viewer");
 
 // State
-let currentFrame = 0;
+let currentFrame = 1;
 let isDragging = false;
 let startX = 0;
 
